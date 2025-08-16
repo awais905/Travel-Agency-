@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Packages - MS Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #f5c518;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f5c518;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .packages {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .packages h2 {
+      text-align: center;
+      color: #f5c518;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .package {
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .package:hover {
+      transform: translateY(-10px);
+    }
+
+    .package img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 20px;
+    }
+
+    .package-content h3 {
+      margin: 0 0 10px;
+      color: #f5c518;
+    }
+
+    .package-content p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f5c518;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MS Travel Agency</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore Our Travel Packages</h2>
+    <p>Choose the best deals for your next adventure</p>
+  </section>
+
+  <section class="packages">
+    <h2>Our Best Packages</h2>
+    <div class="package-grid">
+
+      <div class="package">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Dubai Tour">
+        <div class="package-content">
+          <h3>Dubai Luxury Tour</h3>
+          <p>5 Days / 4 Nights - Explore Burj Khalifa, Desert Safari & Shopping Festival.</p>
+          <div class="price">$1200 / person</div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="package">
+        <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca" alt="Turkey Tour">
+        <div class="package-content">
+          <h3>Turkey Historical Tour</h3>
+          <p>7 Days / 6 Nights - Visit Istanbul, Cappadocia & Bosphorus Cruise.</p>
+          <div class="price">$1500 / person</div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="package">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Malaysia Tour">
+        <div class="package-content">
+          <h3>Malaysia Adventure</h3>
+          <p>6 Days / 5 Nights - Kuala Lumpur, Langkawi Islands & Genting Highlands.</p>
+          <div class="price">$1100 / person</div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="package">
+        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef" alt="Saudi Tour">
+        <div class="package-content">
+          <h3>Umrah Package</h3>
+          <p>10 Days - Makkah, Madinah with luxury hotels & guided Ziyarats.</p>
+          <div class="price">$2000 / person</div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MS Travel Agency. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
